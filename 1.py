@@ -1,7 +1,6 @@
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
-import seaborn as sns
  
  
 def normalize_feature(df):
@@ -53,7 +52,3 @@ w = np.zeros(x.shape[1])
  
 final_theta, cost_data = batch_gradient_decent(w, x, y, 500)
 print(final_theta[0:10])
-ax = sns.lineplot(np.arange(500+1),cost_data)
-ax.set_xlabel('epoch')
-ax.set_ylabel('cost')
-plt.show()
