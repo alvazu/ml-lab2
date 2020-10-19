@@ -1,0 +1,8 @@
+dependencies:
+ - python=3
+ - pip:
+   - spacy
+   - pandas
+   - matplotlib
+   - numpy
+   - seaborn
